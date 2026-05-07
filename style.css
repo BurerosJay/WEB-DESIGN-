@@ -1,0 +1,130 @@
+body{
+    font-family: Arial;
+    padding: 30px;
+    background-color: white;
+}
+
+h1{
+    margin-bottom: 40px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button{
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+/* UBER */
+.uber-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    height: 45px;
+    width: 130px;
+}
+
+.uber-btn:hover{
+    opacity: 0.8;
+}
+
+/* AMAZON */
+.amazon-btn{
+    background-color: rgb(255, 216, 20);
+    border: none;
+    height: 40px;
+    width: 220px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.amazon-btn:hover{
+    background-color: rgb(245, 205, 3);
+}
+
+/* GITHUB */
+.github-btn{
+    background-color: rgb(46, 164, 79);
+    color: white;
+    border: none;
+    height: 45px;
+    width: 120px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.github-btn:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* BOOTSTRAP */
+.bootstrap-start{
+    background-color: rgb(121, 82, 179);
+    color: white;
+    border: none;
+    height: 45px;
+    width: 140px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.bootstrap-start:hover{
+    background-color: rgb(99, 60, 156);
+}
+
+.bootstrap-download{
+    background-color: white;
+    color: rgb(108, 117, 125);
+    border: 1px solid rgb(108, 117, 125);
+    height: 45px;
+    width: 140px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.bootstrap-download:hover{
+    background-color: rgb(108, 117, 125);
+    color: white;
+}
+
+/* LINKEDIN */
+.linkedin-apply{
+    background-color: rgb(10, 102, 194);
+    color: white;
+    border: none;
+    height: 45px;
+    width: 280px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.linkedin-apply:hover{
+    background-color: rgb(2, 70, 138);
+}
+
+.linkedin-save{
+    background-color: white;
+    color: rgb(10, 102, 194);
+    border: 1px solid rgb(10, 102, 194);
+    height: 45px;
+    width: 100px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.linkedin-save:hover{
+    border-width: 2px;
+    background-color: rgb(240, 248, 255);
+}
