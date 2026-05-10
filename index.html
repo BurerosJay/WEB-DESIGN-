@@ -1,4 +1,4 @@
-```html id="w3tvml"
+```html id="6q0x2v"
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Y2K Theme</title>
+
+<!-- FAVICON -->
+<link rel="icon" href="favicon.png">
 
 <style>
 
@@ -83,6 +86,15 @@ nav button{
     0 0 20px #00e5ff;
 }
 
+.hero-image{
+    width:300px;
+    border-radius:20px;
+    margin:20px 0;
+    box-shadow:
+    0 0 20px #ff00cc,
+    0 0 30px #00e5ff;
+}
+
 .hero-sub{
     font-size:20px;
     margin-bottom:30px;
@@ -98,6 +110,10 @@ nav button{
     font-weight:bold;
     background:
     linear-gradient(135deg,#ff00cc,#00e5ff);
+}
+
+.main-btn:hover{
+    transform:scale(1.05);
 }
 
 /* CARDS */
@@ -145,6 +161,13 @@ nav button{
     transform:scale(1.08);
 }
 
+/* AUDIO */
+
+audio{
+    margin-top:20px;
+    width:300px;
+}
+
 /* FOOTER */
 
 .footer{
@@ -167,7 +190,7 @@ nav button{
     </button>
 
     <button onclick="showPage(2)">
-        About
+        Music
     </button>
 
     <button onclick="showPage(3)">
@@ -188,6 +211,9 @@ nav button{
         Enter the Y2K Era
     </h1>
 
+    <!-- IMAGE -->
+    <img src="y2k-image.jpg" class="hero-image">
+
     <p class="hero-sub">
         Neon dreams and digital aesthetics.
     </p>
@@ -205,14 +231,18 @@ nav button{
     <div class="card">
 
         <h2>
-            About This Theme
+            Y2K Music Player
         </h2>
 
         <p>
-            This website is inspired by the
-            colorful futuristic Y2K aesthetic
-            with glowing gradients and glassmorphism.
+            Listen to futuristic vibes and
+            nostalgic late-night music.
         </p>
+
+        <!-- AUDIO -->
+        <audio controls>
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
 
     </div>
 
