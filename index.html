@@ -1,10 +1,8 @@
-```html id="jlwmva"
+```html
 <!DOCTYPE html>
 <html>
 <head>
     <title>Activity 7 - Y2K Theme</title>
-
-    <link rel="icon" href="lany.png" type="image/png">
 
     <style>
 
@@ -58,8 +56,9 @@
             align-items:center;
             justify-content:center;
             background:
-            linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
-            url('lany.png') center/cover no-repeat;
+            linear-gradient(
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7));
         }
 
         #main-content{
@@ -73,6 +72,9 @@
             background:rgba(255,255,255,0.12);
             backdrop-filter:blur(18px);
             text-align:center;
+            box-shadow:
+            0 0 25px #ff00cc,
+            0 0 40px #00e5ff;
         }
 
         .login-box h1{
@@ -124,6 +126,9 @@
         .hero-title{
             font-size:clamp(48px,8vw,90px);
             margin-bottom:20px;
+            text-shadow:
+            0 0 10px #ff00cc,
+            0 0 20px #00e5ff;
         }
 
         .hero-sub{
@@ -139,6 +144,11 @@
             linear-gradient(135deg,#ff00cc,#00e5ff);
             color:white;
             cursor:pointer;
+            font-weight:bold;
+        }
+
+        .btn-primary:hover{
+            transform:scale(1.05);
         }
 
     </style>
