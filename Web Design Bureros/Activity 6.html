@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Activity 6 - Login Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login-screen">
+
+    <div class="login-box">
+
+        <h1>Y2K LOGIN</h1>
+
+        <p>Enter your account</p>
+
+        <div class="error-msg" id="error-msg">
+            Please fill in all fields.
+        </div>
+
+        <input
+        type="text"
+        id="username"
+        placeholder="Username">
+
+        <input
+        type="password"
+        id="password"
+        placeholder="Password">
+
+        <button onclick="doLogin()">
+            LOGIN
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+function doLogin(){
+
+    let username =
+    document.getElementById("username").value;
+
+    let password =
+    document.getElementById("password").value;
+
+    let error =
+    document.getElementById("error-msg");
+
+    if(username === "" || password === ""){
+        error.style.display = "block";
+    }
+    else{
+        error.style.display = "none";
+        alert("Login Successful!");
+    }
+
+}
+
+</script>
+
+</body>
+</html>
