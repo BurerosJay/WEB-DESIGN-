@@ -1,30 +1,313 @@
-.pagination-bar{
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Verdana,sans-serif;
+}
+
+/* ACTIVITY 2 */
+
+.buttons-page{
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:10px;
-    margin-top:50px;
+    background:linear-gradient(135deg,#ff00cc,#3333ff,#00e5ff);
+    color:white;
 }
 
-.page-btn{
-    width:42px;
-    height:42px;
+.container{
+    text-align:center;
+}
+
+.container h1{
+    margin-bottom:40px;
+}
+
+.btn-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+}
+
+.uberbutton{
+    background:black;
+    color:white;
+    border:none;
+    padding:15px 32px;
+    cursor:pointer;
+}
+
+.amazonbutton{
+    background:rgb(255,216,20);
+    color:black;
+    border:none;
+    padding:15px 32px;
+    border-radius:50px;
+    cursor:pointer;
+}
+
+.githubbutton{
+    background:rgb(46,164,79);
+    color:white;
+    border:none;
+    padding:15px 32px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.bootstrapbutton{
+    background:rgb(121,82,179);
+    color:white;
+    border:none;
+    padding:15px 32px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.bootstrap2button{
+    background:white;
+    color:gray;
+    border:1px solid gray;
+    padding:15px 32px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.linkedinbutton{
+    background:rgb(10,102,194);
+    color:white;
+    border:none;
+    padding:15px 32px;
+    border-radius:50px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.linkedin2button{
+    background:white;
+    color:rgb(10,102,194);
+    border:1px solid rgb(10,102,194);
+    padding:15px 32px;
+    border-radius:50px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* ACTIVITY 3 */
+
+.hover-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff00cc,#3333ff,#00e5ff);
+    color:white;
+}
+
+.hover-page button{
+    transition:0.4s;
+}
+
+.hover-page .uberbutton:hover{
+    background:rgba(0,0,0,0.5);
+}
+
+.hover-page .amazonbutton:hover{
+    background:rgb(201,171,19);
+}
+
+.hover-page .githubbutton:hover{
+    box-shadow:0 4px 12px rgba(0,0,0,0.4);
+}
+
+.hover-page .bootstrapbutton:hover{
+    background:rgb(84,48,136);
+}
+
+.hover-page .bootstrap2button:hover{
+    background:gray;
+    color:white;
+}
+
+.hover-page .linkedinbutton:hover{
+    background:rgb(0,74,173);
+}
+
+.hover-page .linkedin2button:hover{
+    background:rgb(10,102,194);
+    color:white;
+}
+
+/* ACTIVITY 4 */
+
+.playlist-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    background:url('justin.png') center/cover no-repeat;
+}
+
+.card{
+    width:350px;
+    padding:30px;
+    text-align:center;
+    border-radius:25px;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter:blur(10px);
+}
+
+.playlist-bar{
+    overflow:hidden;
+    white-space:nowrap;
+    margin-bottom:20px;
+}
+
+.scroll-text{
+    display:inline-block;
+    padding-left:100%;
+    font-size:22px;
+    font-weight:bold;
+    color:#00e5ff;
+    animation:scrolling 12s linear infinite;
+}
+
+@keyframes scrolling{
+    from{transform:translateX(0);}
+    to{transform:translateX(-100%);}
+}
+
+audio{
+    width:100%;
+}
+
+.gif-row{
+    margin-top:20px;
+}
+
+.gif{
+    width:40px;
+}
+
+/* ACTIVITY 5 */
+
+.hero-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    background:url('justin.png') center/cover no-repeat;
+}
+
+.overlay{
+    padding:40px;
+    border-radius:20px;
+    background:rgba(0,0,0,0.5);
+}
+
+.hero-title{
+    font-size:70px;
+}
+
+.hero-image{
+    width:300px;
+    border-radius:20px;
+    margin:20px 0;
+}
+
+.main-btn{
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    color:white;
+    font-weight:bold;
+    background:linear-gradient(135deg,#ff00cc,#00e5ff);
+}
+
+/* ACTIVITY 6 */
+
+.login-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0a0015,#15003a,#001d3d);
+    color:white;
+}
+
+.login-box{
+    width:350px;
+    padding:40px;
+    text-align:center;
+    border-radius:25px;
+    background:rgba(255,255,255,0.08);
+}
+
+.login-box input{
+    width:100%;
+    padding:14px;
+    margin-bottom:12px;
     border:none;
     border-radius:12px;
+}
+
+.login-box button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    color:white;
+    background:linear-gradient(135deg,#ff00cc,#00e5ff);
+}
+
+.error{
+    display:none;
+    color:#ff8080;
+    margin-bottom:10px;
+}
+
+/* ACTIVITY 7 */
+
+.pagination-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff00cc,#3333ff,#00e5ff);
+}
+
+.pagination{
+    display:flex;
+    gap:10px;
+}
+
+.pagination button{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:10px;
     color:white;
     cursor:pointer;
     font-weight:bold;
     background:linear-gradient(135deg,#ff00cc,#00e5ff);
 }
 
-.page-btn.active{
+.pagination .active{
     transform:scale(1.1);
-    box-shadow:
-    0 0 10px #ff00cc,
-    0 0 20px #00e5ff;
+    box-shadow:0 0 10px #ff00cc,0 0 20px #00e5ff;
 }
 
 .prev-next{
-    width:auto;
-    padding:0 18px;
+    width:auto !important;
+    padding:0 20px;
 }
