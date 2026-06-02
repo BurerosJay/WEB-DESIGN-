@@ -1,61 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Activity 6 - Login Page</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-<div id="login-screen">
+<body class="login-page">
 
-    <div class="login-box">
+<div class="login-box">
 
-        <h1>Y2K LOGIN</h1>
+<h1>Y2K LOGIN</h1>
 
-        <p>Enter your account</p>
+<br>
 
-        <div class="error-msg" id="error-msg">
-            Please fill in all fields.
-        </div>
+<div class="error" id="error">
+Please fill in all fields.
+</div>
 
-        <input
-        type="text"
-        id="username"
-        placeholder="Username">
+<input type="text" id="username" placeholder="Username">
 
-        <input
-        type="password"
-        id="password"
-        placeholder="Password">
+<input type="password" id="password" placeholder="Password">
 
-        <button onclick="doLogin()">
-            LOGIN
-        </button>
-
-    </div>
+<button onclick="login()">
+LOGIN
+</button>
 
 </div>
 
 <script>
 
-function doLogin(){
+function login(){
 
-    let username =
-    document.getElementById("username").value;
+const user =
+document.getElementById("username").value.trim();
 
-    let password =
-    document.getElementById("password").value;
+const pass =
+document.getElementById("password").value.trim();
 
-    let error =
-    document.getElementById("error-msg");
+if(!user || !pass){
 
-    if(username === "" || password === ""){
-        error.style.display = "block";
-    }
-    else{
-        error.style.display = "none";
-        alert("Login Successful!");
-    }
+document.getElementById("error")
+.style.display="block";
+
+return;
+
+}
+
+alert("Login Successful!");
 
 }
 
